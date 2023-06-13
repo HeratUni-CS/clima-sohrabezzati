@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:clima/utilities/constants.dart';
 
 class CityScreen extends StatefulWidget {
+  const CityScreen({super.key});
+
   @override
   _CityScreenState createState() => _CityScreenState();
 }
@@ -11,13 +13,13 @@ class _CityScreenState extends State<CityScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage('images/city_background.jpg'),
             fit: BoxFit.cover,
           ),
         ),
-        constraints: BoxConstraints.expand(),
+        constraints: const BoxConstraints.expand(),
         child: SafeArea(
           child: Column(
             children: <Widget>[
